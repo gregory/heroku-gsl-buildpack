@@ -1,0 +1,10 @@
+[submodule "gsl-1.15-ruby"]
+	path = gsl-1.15-ruby
+	url = https://github.com/gregory/heroku-buildpack-ruby
+  ignore = all
+	branch = gsl-1.15-ruby
+[submodule "gsl-1.16-ruby"]
+	path = gsl-1.16-ruby
+	url = https://github.com/gregory/heroku-buildpack-ruby
+  ignore = all
+	branch = gsl-1.16-ruby
