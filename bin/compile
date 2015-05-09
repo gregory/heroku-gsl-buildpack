@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-readonly GSL_VERSION=xxx
+readonly GSL_VERSION=1.16
 echo "-----&gt; Installing GSL ${GSL_VERSION}"
 # change to the the BUILD_DIR ($1)
 cd $1
