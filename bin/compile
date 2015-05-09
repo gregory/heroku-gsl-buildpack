@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+readonly GSL_VERSION=xxx
+echo "-----&gt; Installing GSL ${GSL_VERSION}"
+# change to the the BUILD_DIR ($1)
+cd $1
+# download the binary (-O) silently (-s)
+wget -O  gsl-$GSL_VERSION.tar.gz https://github.com/gregory/heroku-gsl-buildpack/raw/gsl-$GSL_VERSION/gsl-$GSL_VERSION.tar.gz
+# make a directory to untar (like unzip) the binary
+mkdir -p vendor/gsl
+# untar the binary to the directory we want
+tar -C vendor/gsl -xvf gsl-$GSL_VERSION.tar.gz
+rm gsl-$GSL_VERSION.tar.gz
